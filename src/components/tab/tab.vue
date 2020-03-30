@@ -90,6 +90,12 @@
 <style lang="stylus" scoped>
 
   .tab
+    display: flex
+    flex-direction: column
+    height: 100%
     >>> .cube-tab
       padding: 10px 0
+    .slide-wrapper
+      flex: 1
+      overflow: hidden
 </style>

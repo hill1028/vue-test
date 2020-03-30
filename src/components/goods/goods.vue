@@ -32,7 +32,7 @@
                   <span class="now">{{food.price}}元</span>
                 </div>
                 <div class="cart-control-wrapper">
-                  <cart-control :food="food"></cart-control>
+                  <cart-control @add="onAdd" :food="food"></cart-control>
                 </div>
               </div>
             </li>
@@ -42,6 +42,7 @@
     </div>
     <div class="shop-cart-wrapper">
       <shop-cart
+        ref="shopCart"
         :select-foods="selectFoods"
         :deliveryPrice="seller.deliveryPrice"
         :minPrice="seller.minPrice"></shop-cart>
@@ -94,6 +95,9 @@
         getGoods().then((goods) => {
           this.goods = goods
         })
+      },
+      onAdd(el) {
+        this.$refs.shopCart.drop(el)
       }
     },
     components: {
@@ -111,7 +115,7 @@
     text-align: left
     height: 100%
     .scroll-nav-wrapper
-      /*position: absolute*/
+      position: absolute
       width: 100%
       top: 0
       left: 0
@@ -161,8 +165,8 @@
       .icon
         flex: 0 0 57px
         margin-right: 10px
-        img
-          height: auto
+        /*img
+          height: auto*/
       .content
         flex: 1
         .name

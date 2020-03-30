@@ -11,6 +11,8 @@
 </template>
 
 <script>
+  const EVENT_ADD = 'add'
+
   export default {
     name: 'cart-control',
     props: {
@@ -33,6 +35,7 @@
           console.log(this.food.count)
           this.food.count++
         }
+        this.$emit(EVENT_ADD, event.target)
       },
       decrease() {
         if (this.food.count) {

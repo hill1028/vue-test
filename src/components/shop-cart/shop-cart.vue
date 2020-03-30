@@ -6,19 +6,22 @@
         <div class="logo" :class="{'highlight': totalCount>0}">
           <i class="icon-shopping_cart" :class="{'highlight': totalCount>0}"></i>
         </div>
-        <div class="num" v-show="totalCount>0">{{totalCount}}</div>
+        <div class="num" v-show="totalCount>0">
+          <bubble :num="totalCount"></bubble>
+        </div>
       </div>
       <div class="price" :class="{'highlight': totalPrice>0}">￥{{totalPrice}}</div>
       <div class="desc">另需配送费{{deliveryPrice}}</div>
     </div>
     <div class="content-right">
-      <div class="pay" :class="payClass"></div>
+      <div class="pay" :class="payClass">{{payDesc}}</div>
     </div>
   </div>
 </div>
 </template>
 
 <script>
+  import Bubble from 'components/bubble/bubble'
   export default {
     name: 'shop-cart',
     props: {
@@ -64,7 +67,25 @@
         } else {
           return 'enough'
         }
+      },
+      payDesc() {
+        if (this.totalPrice === 0) {
+          return `￥${this.minPrice}元起送`
+        } else if (this.totalPrice < this.minPrice) {
+          const diff = this.minPrice - this.totalPrice
+          return `还差${diff}元起送`
+        } else {
+          return '去结算'
+        }
       }
+    },
+    methods: {
+      drop(el) {
+
+      }
+    },
+    components: {
+      Bubble
     }
   }
 </script>
@@ -76,12 +97,12 @@
     height: 100%
     .content
       display: flex
-      backgroud-color: $color-background
+      background-color: $color-background
       color: $color-light-grey
       .content-left
         flex: 1
         .logo-wrapper
-          /*position: relative*/
+          position: relative
           display: inline-block
           vertical-align: top
           top: -10px
@@ -91,7 +112,7 @@
           width: 56px
           box-sizing: border-box
           border-radius: 50%
-          backgroud-color: $color-background
+          background-color: $color-background
           .logo
             width: 100%
             height: 100%
