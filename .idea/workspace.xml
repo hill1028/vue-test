@@ -2,100 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c41f8b1-faf5-4549-8844-28e28ebb4a1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/fonts/sell-icon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/fonts/sell-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/fonts/sell-icon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/fonts/sell-icon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/stylus/base.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/stylus/icon.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/stylus/index.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/stylus/mixin.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/stylus/variable.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/goods/goods.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header-detail/header-detail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ratings/ratings.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/seller/seller.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star24_half@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star24_half@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star24_off@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star24_off@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star24_on@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star24_on@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star36_half@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star36_half@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star36_off@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star36_off@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star36_on@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star36_on@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star48_half@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star48_half@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star48_off@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star48_off@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star48_on@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/star/star48_on@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_2@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_3@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_4@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/decrease_4@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_2@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_3@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_4@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/discount_4@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_2@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_3@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_4@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/guarantee_4@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_2@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_3@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_4@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/invoice_4@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_2@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_2@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_3@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_3@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_4@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/special_4@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support-icon/support-ico.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/tab/tab.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/v-header/brand@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/v-header/brand@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/v-header/bulletin@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/v-header/bulletin@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/v-header/v-header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/goods/goods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goods/goods.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +34,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-sell/src/components/cart-control/cart-control.vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -165,6 +73,7 @@
       <workItem from="1584692147920" duration="10666000" />
       <workItem from="1584926682724" duration="7042000" />
       <workItem from="1585280668596" duration="4174000" />
+      <workItem from="1585537645390" duration="1467000" />
     </task>
     <servers />
   </component>
