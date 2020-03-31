@@ -97,6 +97,7 @@
         })
       },
       onAdd(el) {
+        // console.log('onAdd')
         this.$refs.shopCart.drop(el)
       }
     },

@@ -30,7 +30,6 @@
         }
         if (this.food.count === undefined) {
           this.$set(this.food, 'count', 1)
-          console.log(this.food.count)
         } else {
           console.log(this.food.count)
           this.food.count++
