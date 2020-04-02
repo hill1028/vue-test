@@ -37,7 +37,7 @@
 
 <script>
   import Star from 'components/star/star'
-  import SupportIco from '../support-icon/support-ico'
+  import SupportIco from 'components/support-ico/support-ico'
   export default {
     name: 'header-detail',
     props: {

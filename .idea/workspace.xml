@@ -2,10 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c41f8b1-faf5-4549-8844-28e28ebb4a1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/shop-cart-list/shop-cart-list.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-control/cart-control.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-control/cart-control.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0831f200721100d904d2bd8bfd824fb3.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/0831f200721100d904d2bd8bfd824fb3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a442555e039208a0b7b31084afe5e2e6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a442555e039208a0b7b31084afe5e2e6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e19299d426294191fa78316d3c7bfe10.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e19299d426294191fa78316d3c7bfe10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/12b1a1a8959a1f38d1d1c9b0b98312c2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/12b1a1a8959a1f38d1d1c9b0b98312c2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/14401d2ffa7709896c5cfe07274b19f5.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/14401d2ffa7709896c5cfe07274b19f5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/212d2bbec55346f1ea062aa10987a8f4.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/212d2bbec55346f1ea062aa10987a8f4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2d29956575abc1d434583f52bbe6ce29.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2d29956575abc1d434583f52bbe6ce29.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2f9bdb5bacba262a478b70d42b0522cc.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2f9bdb5bacba262a478b70d42b0522cc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3b833d24e53daab6246c37b4ddba2cbc.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/3b833d24e53daab6246c37b4ddba2cbc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4155f017827e1fb8e6a0cc019eabfdd1.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/4155f017827e1fb8e6a0cc019eabfdd1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/651027e4f2b4d678390c6b22ee7719d2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/651027e4f2b4d678390c6b22ee7719d2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/66898a7a54052b9f16517bbefb2e7a29.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/66898a7a54052b9f16517bbefb2e7a29.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/84bc7728f9af0c9f9c80ea882d2f8258.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/84bc7728f9af0c9f9c80ea882d2f8258.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8b2c117a22ebb38646165ef9ae7597bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8b2c117a22ebb38646165ef9ae7597bd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/95068391b3b02b5a6c4c9a9796b1f835.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/95068391b3b02b5a6c4c9a9796b1f835.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b1238216f9cbd6165040d45358d7aa0e.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b1238216f9cbd6165040d45358d7aa0e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c495fe0baa0211bea52aeddc575775c9.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c495fe0baa0211bea52aeddc575775c9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d0ff9049dd47a77df1d3692a5d418544.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d0ff9049dd47a77df1d3692a5d418544.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ee47d7ea04bbb1834d8a6bc3c7eb1ebf.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ee47d7ea04bbb1834d8a6bc3c7eb1ebf.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goods/goods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goods/goods.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header-detail/header-detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header-detail/header-detail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shop-cart/shop-cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop-cart/shop-cart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_1@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_4@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/decrease_4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_1@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_4@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/discount_4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_1@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_4@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/guarantee_4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_1@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_4@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/invoice_4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_1@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_4@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/special_4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support-icon/support-ico.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/v-header/v-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/v-header/v-header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +100,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/vue-sell/src/components/shop-cart/shop-cart.vue" />
+    <property name="last_opened_file_path" value="$USER_HOME$/vue-sell/src/components/shop-cart-list/shop-cart-list.vue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,6 +141,8 @@
       <workItem from="1585280668596" duration="4174000" />
       <workItem from="1585537645390" duration="9586000" />
       <workItem from="1585617949866" duration="12948000" />
+      <workItem from="1585707497386" duration="7244000" />
+      <workItem from="1585790828670" duration="9336000" />
     </task>
     <task id="LOCAL-00001" summary="3-30">
       <created>1585558865896</created>
@@ -139,18 +204,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="957" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1583226453928" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1585559118182">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1585814860150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585559118182" />
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585814860150" />
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1585618494484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585618494484" />
-    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1585625040458">
+    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1585813671607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585625040458" />
+    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585813671607" />
     <state x="685" y="176" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1584928796481" />
     <state x="270" y="71" key="SettingsEditor" timestamp="1585555524283">
       <screen x="0" y="0" width="1536" height="824" />
@@ -165,10 +230,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1585618455294" />
-    <state x="431" y="173" width="672" height="647" key="search.everywhere.popup" timestamp="1585626071725">
+    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1585814460622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="173" width="672" height="647" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585626071725" />
+    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585814460622" />
+    <state x="431" y="173" width="672" height="647" key="search.everywhere.popup" timestamp="1585798619983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="173" width="672" height="647" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585798619983" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1584027652178" />
   </component>
   <component name="XDebuggerManager">
