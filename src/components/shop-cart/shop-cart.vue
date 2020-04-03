@@ -145,6 +145,7 @@
           }
           this.listFold = false
           this._showShopCartList()
+          this._showShopCartSticky()
         } else {
           this.listFold = true
           this._hideShopCartList()
@@ -152,6 +153,8 @@
       },
       _showShopCartList() {
         this.shopCartListComp.show()
+      },
+      _showShopCartSticky() {
       },
       _hideShopCartList() {
         this.shopCartListComp.hide()
