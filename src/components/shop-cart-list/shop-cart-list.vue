@@ -8,7 +8,9 @@
       type="shop-cart-list"
       :z-index="90"
     >
-      <transition name="move">
+      <transition name="move"
+        @after-leave="afterLeave"
+      >
         <div v-if="visible">
           <div class="list-header">
             <h1 class="title">购物车</h1>
@@ -25,7 +27,7 @@
                 <span>￥{{food.price}}</span>
               </div>
               <div class="cart-control-wrapper">
-                <cart-control :food="food"></cart-control>
+                <cart-control  @add="onAdd" :food="food"></cart-control>
               </div>
             </li>
           </ul>
@@ -40,6 +42,8 @@
   import CartControl from 'components/cart-control/cart-control'
 
   const EVENT_HIDE = 'hide'
+  const EVENT_LEAVE = 'leave'
+  const EVENT_ADD = 'add'
 
   export default {
     name: 'shop-cart-list',
@@ -68,6 +72,12 @@
       },
       maskClick() {
         this.hide()
+      },
+      afterLeave() {
+        this.$emit(EVENT_LEAVE)
+      },
+      onAdd(el) {
+        this.$emit(EVENT_ADD, el)
       }
     },
     components: { CartControl }

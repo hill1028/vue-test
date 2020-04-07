@@ -67,11 +67,20 @@
         default () {
           return []
         }
+      },
+      fold: {
+        type: Boolean,
+        default: true
+      },
+      sticky: {
+        type: Boolean,
+        default: false
       }
     },
     data() {
       return {
-        balls: createBalls()
+        balls: createBalls(),
+        listFold: this.fold
       }
     },
     computed: {
@@ -113,17 +122,6 @@
     },
     created () {
       this.dropBalls = []
-      this.listFold = true
-      this.shopCartListComp = this.shopCartListComp || this.$createShopCartList({
-        $props: {
-          selectFoods: 'selectFoods'
-        },
-        $events: {
-          hide: () => {
-            this.listFold = true
-          }
-        }
-      })
     },
     methods: {
       drop(el) {
@@ -152,12 +150,42 @@
         }
       },
       _showShopCartList() {
+        this.shopCartListComp = this.shopCartListComp || this.$createShopCartList({
+          $props: {
+            selectFoods: 'selectFoods'
+          },
+          $events: {
+            hide: () => {
+              this.listFold = true
+            },
+            leave: () => {
+              this._hideShopCartSticky()
+            },
+            add: (el) => {
+              this.shopCartStickComp.drop(el)
+            }
+          }
+        })
         this.shopCartListComp.show()
       },
       _showShopCartSticky() {
+        this.shopCartStickComp = this.shopCartStickComp || this.$createShopCartSticky({
+          $props: {
+            selectFoods: 'selectFoods',
+            deliveryPrice: 'deliveryPrice',
+            minPrice: 'minPrice',
+            fold: 'listFold',
+            list: this.shopCartListComp
+          }
+        })
+        this.shopCartStickComp.show()
       },
       _hideShopCartList() {
-        this.shopCartListComp.hide()
+        const comp = this.sticky ? this.$parent.list : this.shopCartStickComp
+        comp.hide && comp.hide()
+      },
+      _hideShopCartSticky() {
+        this.shopCartStickComp.hide()
       },
       beforeDrop(el) {
         const ball = this.dropBalls[this.dropBalls.length - 1]
@@ -182,6 +210,11 @@
           ball.show = false
           el.style.display = 'none'
         }
+      }
+    },
+    watch: {
+      fold(newVal) {
+        this.listFold = newVal
       }
     },
     components: {
