@@ -14,22 +14,22 @@
         <div v-if="visible">
           <div class="list-header">
             <h1 class="title">购物车</h1>
-            <span class="empty" @click="empty">清空</span>
+            <span @click="empty" class="empty">清空</span>
           </div>
-          <cube-scroll class="list-content">
+          <cube-scroll class="list-content" ref="listContent">
             <ul>
-            <li
-              class="food"
-              v-for="(food, index) in selectFoods"
-              :key="index">
-              <span class="name">{{food.name}}</span>
-              <div class="price">
-                <span>￥{{food.price}}</span>
-              </div>
-              <div class="cart-control-wrapper">
-                <cart-control  @add="onAdd" :food="food"></cart-control>
-              </div>
-            </li>
+              <li
+                class="food"
+                v-for="(food, index) in selectFoods"
+                :key="index">
+                <span class="name">{{food.name}}</span>
+                <div class="price">
+                  <span>￥{{food.price}}</span>
+                </div>
+                <div class="cart-control-wrapper">
+                  <cart-control  @add="onAdd" :food="food"></cart-control>
+                </div>
+              </li>
           </ul>
           </cube-scroll>
         </div>
@@ -40,13 +40,14 @@
 
 <script>
   import CartControl from 'components/cart-control/cart-control'
-
-  const EVENT_HIDE = 'hide'
+  import popupMixin from 'common/mixins/popup'
   const EVENT_LEAVE = 'leave'
   const EVENT_ADD = 'add'
+  const EVENT_SHOW = 'show'
 
   export default {
     name: 'shop-cart-list',
+    mixins: [popupMixin],
     props: {
       selectFoods: {
         type: Array,
@@ -55,20 +56,29 @@
         }
       }
     },
-    data() {
-      return {
-        visible: false
-      }
+    created () {
+      this.$on(EVENT_SHOW, () => {
+        this.$nextTick(() => {
+          this.$refs.listContent.refresh()
+        })
+      })
     },
     methods: {
       empty() {
-      },
-      show() {
-        this.visible = true
-      },
-      hide() {
-        this.visible = false
-        this.$emit(EVENT_HIDE)
+        this.$createDialog({
+          $props: {
+            type: 'confirm',
+            content: '确定要清空购物车吗？'
+          },
+          $events: {
+            confirm: () => {
+              this.selectFoods.forEach((food) => {
+                food.count = 0
+              })
+              this.hide()
+            }
+          }
+        }).show()
       },
       maskClick() {
         this.hide()

@@ -14,7 +14,7 @@
       <div class="desc">另需配送费{{deliveryPrice}}</div>
     </div>
     <div class="content-right">
-      <div class="pay" :class="payClass">{{payDesc}}</div>
+      <div @click="pay" class="pay" :class="payClass">{{payDesc}}</div>
     </div>
   </div>
   <div class="ball-container">
@@ -136,6 +136,18 @@
           }
         }
       },
+      pay(e) {
+        if (this.totalPrice < this.minPrice) {
+          return
+        }
+        this.$createDialog({
+          $props: {
+            title: '支付',
+            content: `支付${this.totalPrice}元`
+          }
+        }).show()
+        e.stopPropagation()
+      },
       toggleList() {
         if (this.listFold) {
           if (!this.totalCount) {
@@ -215,6 +227,11 @@
     watch: {
       fold(newVal) {
         this.listFold = newVal
+      },
+      totalCount(newVal) {
+        if (!this.listFold && !newVal) {
+          this._hideShopCartList()
+        }
       }
     },
     components: {
