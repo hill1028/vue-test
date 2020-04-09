@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c41f8b1-faf5-4549-8844-28e28ebb4a1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/food/food.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/split/split.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a442555e039208a0b7b31084afe5e2e6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a442555e039208a0b7b31084afe5e2e6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f9d6a5d6b06c166333010138d6d74d24.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f9d6a5d6b06c166333010138d6d74d24.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0527b689cdab87dd32952223ccb8a9d1.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0527b689cdab87dd32952223ccb8a9d1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/12b1a1a8959a1f38d1d1c9b0b98312c2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/12b1a1a8959a1f38d1d1c9b0b98312c2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1d839844e50446e44c2507d1ca2e2f66.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/1d839844e50446e44c2507d1ca2e2f66.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2d29956575abc1d434583f52bbe6ce29.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/2d29956575abc1d434583f52bbe6ce29.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/628f166a1da424f1f0e2aa595be8dc36.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/628f166a1da424f1f0e2aa595be8dc36.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/95068391b3b02b5a6c4c9a9796b1f835.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/95068391b3b02b5a6c4c9a9796b1f835.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c495fe0baa0211bea52aeddc575775c9.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/c495fe0baa0211bea52aeddc575775c9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d0ff9049dd47a77df1d3692a5d418544.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d0ff9049dd47a77df1d3692a5d418544.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e7384be9f7c73e78f7d9429febe8be20.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e7384be9f7c73e78f7d9429febe8be20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/fb286da93f703a853c09a4704f9f8d54.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/fb286da93f703a853c09a4704f9f8d54.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/food/food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/food/food.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/goods/goods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/goods/goods.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shop-cart-list/shop-cart-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shop-cart-list/shop-cart-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +50,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/vue-sell/src/components/split/split.vue" />
+    <property name="last_opened_file_path" value="$USER_HOME$/vue-sell/src/components/shop-cart-list/shop-cart-list.vue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\cui_yongjun\vue-sell-cube\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -168,36 +181,36 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="957" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1583226453928" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586249902075">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586337188664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586249902075" />
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586337188664" />
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1585618494484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585618494484" />
-    <state x="685" y="176" key="FileChooserDialogImpl" timestamp="1586357155220">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1586402445825">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586335811563" />
+    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586402445825" />
     <state x="685" y="176" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586357155220" />
-    <state x="270" y="71" key="SettingsEditor" timestamp="1585555524283">
+    <state x="270" y="0" key="SettingsEditor" timestamp="1586396866057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="71" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585555524283" />
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586396866057" />
     <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584089553405" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586249910387">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586337195124">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586249910387" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586337195124" />
     <state x="482" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1585559258073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="482" y="146" key="VcsDiffUtil.ChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585559258073" />
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586226733908">
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586396606977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586226733908" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586396606977" />
     <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1585814460622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
