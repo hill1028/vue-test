@@ -19,10 +19,10 @@
               <span class="now">￥{{food.price}}元</span><span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}元</span>
             </div>
             <div class="cart-control-wrapper">
-              <cart-control :food="food"></cart-control>
+              <cart-control @add="onAdd" :food="food"></cart-control>
             </div>
             <transition name="fade">
-              <div class="buy" v-show="!food.count">加入购物车</div>
+              <div @click="addFirst" class="buy" v-show="!food.count">加入购物车</div>
             </transition>
           </div>
           <split></split>
@@ -41,6 +41,7 @@
   import popupMixin from 'common/mixins/popup'
   import CartControl from 'components/cart-control/cart-control'
   const EVENT_LEAVE = 'leave'
+  const EVENT_ADD = 'add'
   export default {
     name: 'food',
     mixins: [popupMixin],
@@ -52,6 +53,13 @@
     methods: {
       afterLeave() {
         this.$emit(EVENT_LEAVE)
+      },
+      addFirst(event) {
+        this.$set(this.food, 'count', 1)
+        this.$emit(EVENT_ADD, event.target)
+      },
+      onAdd(target) {
+        this.$emit(EVENT_ADD, target)
       }
     },
     components: {

@@ -31,7 +31,7 @@
         if (this.food.count === undefined) {
           this.$set(this.food, 'count', 1)
         } else {
-          console.log(this.food.count)
+          // console.log(this.food.count)
           this.food.count++
         }
         this.$emit(EVENT_ADD, event.target)

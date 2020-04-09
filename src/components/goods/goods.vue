@@ -157,6 +157,9 @@
           $events: {
             leave: () => {
               this._hideShopCartSticky()
+            },
+            add: (target) => {
+              this.shopCartStickyComp.drop(target)
             }
           }
         })

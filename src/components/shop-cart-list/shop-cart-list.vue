@@ -103,9 +103,10 @@
     &.fade-enter-active, &.fade-leave-active
       transition: all 0.3s ease-in-out
       opacity: 1
-    &.move-enter-active, &.move-leave-active
-      transition: all .3s
-    &.move-enter, &.move-leave-to
+    .move-enter-active, .move-leave-active
+      transition: all .3s ease-in-out
+    .move-enter, .move-leave-to
+      transform: translate3d(0, 100%, 0)
     .list-header
       height: 40px
       line-height: 40px
