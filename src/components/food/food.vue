@@ -19,7 +19,7 @@
               <span class="now">￥{{food.price}}元</span><span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}元</span>
             </div>
             <div class="cart-control-wrapper">
-              <cart-control @add="onAdd" :food="food"></cart-control>
+              <cart-control @add="addFood" :food="food"></cart-control>
             </div>
             <transition name="fade">
               <div @click="addFirst" class="buy" v-show="!food.count">加入购物车</div>
@@ -29,6 +29,26 @@
           <div class="info" v-show="food.info">
             <h1 class="title">商品信息</h1>
             <p class="text">{{food.info}}</p>
+          </div>
+          <split></split>
+          <div class="ratings">
+            <h1 class="title">商品评价</h1>
+            <div class="ratings-wrapper">
+              <ul>
+                <li
+                  v-for="(rating, index) in ratings"
+                  :key="index"
+                  class="rating-item border-bottom-1px"
+                >
+                  <div class="user">
+                    <span class="name">{{rating.username}}</span>
+                    <img class="avatar" width="12" height="12" :src="rating.avatar">
+                  </div>
+                  <div class="time"></div>
+                  <p class="text">{{rating.text}}</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </cube-scroll>
@@ -50,6 +70,11 @@
         type: Object
       }
     },
+    computed: {
+      ratings() {
+        return this.food.ratings
+      }
+    },
     methods: {
       afterLeave() {
         this.$emit(EVENT_LEAVE)
@@ -58,7 +83,7 @@
         this.$set(this.food, 'count', 1)
         this.$emit(EVENT_ADD, event.target)
       },
-      onAdd(target) {
+      addFood(target) {
         this.$emit(EVENT_ADD, target)
       }
     },
@@ -168,5 +193,34 @@
         line-height: 24px
         font-size: $fontsize-small
         color: $color-grey
+
+    .ratings
+      padding-top: 18px
+      .title
+        margin-left: 18px
+        line-height: 14px
+        font-size: $fontsize-medium
+        color: $color-dark-grey
+
+      .ratings-wrapper
+        padding: 0 18px
+        .rating-item
+          position: relative
+          padding: 16px 0
+          &:last-child
+            border-none()
+          .user
+            position: absolute
+            right: 0
+            top: 16px
+            display: flex
+            align-items: center
+            line-height: 12px
+            .name
+              margin-right: 6px
+              font-size: $fontsize-small-s
+              color: $color-light-grey
+            .avatar
+              border-radius: 50%
 
 </style>
