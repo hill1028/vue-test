@@ -82,7 +82,7 @@
       <workItem from="1586226721518" duration="12120000" />
       <workItem from="1586312176608" duration="7042000" />
       <workItem from="1586355771426" duration="3240000" />
-      <workItem from="1586748947673" duration="3674000" />
+      <workItem from="1586748947673" duration="3783000" />
     </task>
     <task id="LOCAL-00001" summary="3-30">
       <created>1585558865896</created>
@@ -126,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586508995581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="4-13">
+      <created>1586768128184</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586768128184</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +167,8 @@
     <MESSAGE value="complete shop-cart-list" />
     <MESSAGE value="4-7" />
     <MESSAGE value="4-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="4-10" />
+    <MESSAGE value="4-13" />
+    <option name="LAST_COMMIT_MESSAGE" value="4-13" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="139" key="#Notifications" timestamp="1583370392457">
@@ -175,10 +183,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="957" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1583226453928" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586508989138">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586768125421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586508989138" />
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586768125421" />
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1585618494484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -193,10 +201,10 @@
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586396866057" />
     <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584089553405" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586508999166">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586768131647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586508999166" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586768131647" />
     <state x="482" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1585559258073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
