@@ -16,7 +16,8 @@
               <span class="rating">好评率{{food.rating}}%</span>
             </div>
             <div class="price">
-              <span class="now">￥{{food.price}}元</span><span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}元</span>
+              <span class="now">￥{{food.price}}元</span><span class="old"
+                                                             v-show="food.oldPrice">￥{{food.oldPrice}}元</span>
             </div>
             <div class="cart-control-wrapper">
               <cart-control @add="addFood" :food="food"></cart-control>
@@ -44,8 +45,11 @@
                     <span class="name">{{rating.username}}</span>
                     <img class="avatar" width="12" height="12" :src="rating.avatar">
                   </div>
-                  <div class="time"></div>
-                  <p class="text">{{rating.text}}</p>
+                  <div class="time">{{format(rating.rateTime)}}</div>
+                  <p class="text">
+                    <span :class="{'icon-thumb_up': rating.rateType===0, 'icon-thumb_down': rating.rateType===1}">
+                    </span>{{rating.text}}
+                  </p>
                 </li>
               </ul>
             </div>
@@ -60,6 +64,8 @@
   import Split from 'components/split/split'
   import popupMixin from 'common/mixins/popup'
   import CartControl from 'components/cart-control/cart-control'
+  import moment from 'moment'
+
   const EVENT_LEAVE = 'leave'
   const EVENT_ADD = 'add'
   export default {
@@ -71,20 +77,23 @@
       }
     },
     computed: {
-      ratings() {
+      ratings () {
         return this.food.ratings
       }
     },
     methods: {
-      afterLeave() {
+      afterLeave () {
         this.$emit(EVENT_LEAVE)
       },
-      addFirst(event) {
+      addFirst (event) {
         this.$set(this.food, 'count', 1)
         this.$emit(EVENT_ADD, event.target)
       },
-      addFood(target) {
+      addFood (target) {
         this.$emit(EVENT_ADD, target)
+      },
+      format(time) {
+        return moment(time).format('YYYY-MM-DD hh:mm')
       }
     },
     components: {
@@ -104,25 +113,31 @@
     width: 100%
     z-index: 30
     background: $color-white
+
     &.fade-enter-active, &.fade-leave-active
       transition: all 0.3s linear
+
     &.fade-enter, &.fade-leave-to
       transform: translate3d(100%, 0, 0)
+
     .image-header
       position: relative
       width: 100%
       height: 0
       padding-top: 100%
+
       img
         position: absolute
         top: 0
         left: 0
         width: 100%
         height: 100%
+
       .back
         position: absolute
         top: 10px
         left: 0
+
         .icon-arrow_lift
           display: block
           padding: 10px
@@ -132,37 +147,45 @@
     .content
       position: relative
       padding: 18px
+
       .title
         line-height: 14px
         margin-bottom: 8px
         font-size: $fontsize-medium
         font-weight: 700
         color: $color-dark-grey
+
       .detail
         margin-bottom: 18px
         line-height: 10px
         height: 10px
+
         .sell-count, .rating
           font-size: $fontsize-small-s
           color: $color-light-grey
+
         .sell-count
           margin-right: 12px
 
       .price
         line-height: 24px
         font-weight: 700
+
         .now
           margin-right: 8px
           font-size: 14px
           color: $color-red
+
         .old
-          text-decoration : line-through
+          text-decoration: line-through
           font-size: $fontsize-small-s
           color: $color-light-grey
+
       .cart-control-wrapper
         position: absolute
         right: 12px
         bottom: 12px
+
       .buy
         position: absolute
         right: 18px
@@ -176,18 +199,23 @@
         color: $color-white
         background-color: $color-blue
         opacity: 1
+
         &.fade-enter-active, &.fade-leave-active
           transition: all .3s linear
+
         &.fade-enter, &.fade-leave-to
           opacity: 0
           z-index: -1
+
     .info
       padding: 18px
+
       .title
         line-height: 14px
         margin-bottom: 6px
         font-size: $fontsize-medium
         color: $color-dark-grey
+
       .text
         padding: 0 8px
         line-height: 24px
@@ -196,6 +224,7 @@
 
     .ratings
       padding-top: 18px
+
       .title
         margin-left: 18px
         line-height: 14px
@@ -204,11 +233,14 @@
 
       .ratings-wrapper
         padding: 0 18px
+
         .rating-item
           position: relative
           padding: 16px 0
+
           &:last-child
             border-none()
+
           .user
             position: absolute
             right: 0
@@ -216,11 +248,31 @@
             display: flex
             align-items: center
             line-height: 12px
+
             .name
               margin-right: 6px
               font-size: $fontsize-small-s
               color: $color-light-grey
+
             .avatar
               border-radius: 50%
 
+          .time
+            margin-bottom: 6px
+            line-height: 12px
+            font-size: $fontsize-small-s
+            color: $color-light-grey
+
+          .text
+            line-height: 16px
+            font-size: $fontsize-small
+            color: $color-dark-grey
+            .icon-thumb_up, .icon-thumb_down
+              margin-right: 4px
+              line-height: 16px
+              font-size: $fontsize-small
+            .icon-thumb_up
+              color: $color-blue
+            .icon-thumb_down
+              color: $color-light-grey
 </style>
