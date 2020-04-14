@@ -34,6 +34,13 @@
           <split></split>
           <div class="ratings">
             <h1 class="title">商品评价</h1>
+            <rating-select
+              :ratings="ratings"
+              :onlyContent="onlyContent"
+              :selectType="selectType"
+              :desc="desc"
+              @select="onSelect"
+            ></rating-select>
             <div class="ratings-wrapper">
               <ul>
                 <li
@@ -65,15 +72,28 @@
   import popupMixin from 'common/mixins/popup'
   import CartControl from 'components/cart-control/cart-control'
   import moment from 'moment'
+  import RatingSelect from 'components/rating-select/rating-select'
 
   const EVENT_LEAVE = 'leave'
   const EVENT_ADD = 'add'
+  const ALL = 2
   export default {
     name: 'food',
     mixins: [popupMixin],
     props: {
       food: {
         type: Object
+      }
+    },
+    data() {
+      return {
+        onlyContent: false,
+        desc: {
+          all: '全部',
+          positive: '推荐',
+          negative: '吐槽'
+        },
+        selectType: ALL
       }
     },
     computed: {
@@ -94,11 +114,15 @@
       },
       format(time) {
         return moment(time).format('YYYY-MM-DD hh:mm')
+      },
+      onSelect(type) {
+        this.selectType = type
       }
     },
     components: {
       Split,
-      CartControl
+      CartControl,
+      RatingSelect
     }
   }
 </script>

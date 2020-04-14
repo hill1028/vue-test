@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c41f8b1-faf5-4549-8844-28e28ebb4a1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/rating-select/rating-select.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/food/food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/food/food.vue" afterDir="false" />
     </list>
@@ -83,6 +84,8 @@
       <workItem from="1586312176608" duration="7042000" />
       <workItem from="1586355771426" duration="3240000" />
       <workItem from="1586748947673" duration="3783000" />
+      <workItem from="1586768230369" duration="44000" />
+      <workItem from="1586843199113" duration="9465000" />
     </task>
     <task id="LOCAL-00001" summary="3-30">
       <created>1585558865896</created>
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586768128184</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="4-13">
+      <created>1586768243783</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586768243783</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,28 +193,28 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="957" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1583226453928" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586768125421">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586768239968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586768125421" />
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586768239968" />
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1585618494484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585618494484" />
-    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1586508432964">
+    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1586853758757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586508432964" />
+    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586853758757" />
     <state x="685" y="176" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586439497059" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1586396866057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586396866057" />
     <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584089553405" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586768131647">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586768248676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586768131647" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586768248676" />
     <state x="482" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1585559258073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -213,10 +223,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586396606977" />
-    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1585814460622">
+    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1586854398343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585814460622" />
+    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586854398343" />
     <state x="431" y="173" width="672" height="647" key="search.everywhere.popup" timestamp="1585798619983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
