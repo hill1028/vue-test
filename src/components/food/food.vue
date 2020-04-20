@@ -40,11 +40,12 @@
               :selectType="selectType"
               :desc="desc"
               @select="onSelect"
+              @toggle="onToggle"
             ></rating-select>
             <div class="ratings-wrapper">
               <ul>
                 <li
-                  v-for="(rating, index) in ratings"
+                  v-for="(rating, index) in computedRatings"
                   :key="index"
                   class="rating-item border-bottom-1px"
                 >
@@ -59,6 +60,7 @@
                   </p>
                 </li>
               </ul>
+              <div class="no-rating" v-show="!computedRatings || !computedRatings.length">暂无评价</div>
             </div>
           </div>
         </div>
@@ -99,6 +101,18 @@
     computed: {
       ratings () {
         return this.food.ratings
+      },
+      computedRatings() {
+        const ret = []
+        this.ratings.forEach((rating) => {
+          if (this.onlyContent && !rating.text) {
+            return
+          }
+          if (this.selectType === ALL || rating.rateType === this.selectType) {
+            ret.push(rating)
+          }
+        })
+        return ret
       }
     },
     methods: {
@@ -117,6 +131,9 @@
       },
       onSelect(type) {
         this.selectType = type
+      },
+      onToggle() {
+        this.onlyContent = !this.onlyContent
       }
     },
     components: {
@@ -299,4 +316,9 @@
               color: $color-blue
             .icon-thumb_down
               color: $color-light-grey
+        .no-rating
+          padding: 16px 0
+          /*line-height: 24px*/
+          font-size: $fontsize-small
+          color: $color-light-grey
 </style>
