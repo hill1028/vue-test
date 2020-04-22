@@ -72,16 +72,16 @@
 <script>
   import Split from 'components/split/split'
   import popupMixin from 'common/mixins/popup'
+  import ratingsMixin from 'common/mixins/ratings'
   import CartControl from 'components/cart-control/cart-control'
   import moment from 'moment'
   import RatingSelect from 'components/rating-select/rating-select'
 
   const EVENT_LEAVE = 'leave'
   const EVENT_ADD = 'add'
-  const ALL = 2
   export default {
     name: 'food',
-    mixins: [popupMixin],
+    mixins: [popupMixin, ratingsMixin],
     props: {
       food: {
         type: Object
@@ -89,30 +89,16 @@
     },
     data() {
       return {
-        onlyContent: false,
         desc: {
           all: '全部',
           positive: '推荐',
           negative: '吐槽'
-        },
-        selectType: ALL
+        }
       }
     },
     computed: {
       ratings () {
         return this.food.ratings
-      },
-      computedRatings() {
-        const ret = []
-        this.ratings.forEach((rating) => {
-          if (this.onlyContent && !rating.text) {
-            return
-          }
-          if (this.selectType === ALL || rating.rateType === this.selectType) {
-            ret.push(rating)
-          }
-        })
-        return ret
       }
     },
     methods: {
@@ -128,12 +114,6 @@
       },
       format(time) {
         return moment(time).format('YYYY-MM-DD hh:mm')
-      },
-      onSelect(type) {
-        this.selectType = type
-      },
-      onToggle() {
-        this.onlyContent = !this.onlyContent
       }
     },
     components: {

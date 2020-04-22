@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c41f8b1-faf5-4549-8844-28e28ebb4a1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/common/mixins/ratings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/food/food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/food/food.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ratings/ratings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ratings/ratings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/seller/seller.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/seller/seller.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/star/star.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/star/star.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,7 +41,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/vue-sell/src/components/ratings/ratings.vue" />
+    <property name="last_opened_file_path" value="$USER_HOME$/vue-sell/src/components/seller/seller.vue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -87,7 +93,9 @@
       <workItem from="1586843199113" duration="9529000" />
       <workItem from="1586920100044" duration="1216000" />
       <workItem from="1587092285997" duration="355000" />
-      <workItem from="1587371124799" duration="1445000" />
+      <workItem from="1587371124799" duration="1628000" />
+      <workItem from="1587449724649" duration="7680000" />
+      <workItem from="1587518107247" duration="17016000" />
     </task>
     <task id="LOCAL-00001" summary="3-30">
       <created>1585558865896</created>
@@ -152,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586854653527</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="4-20">
+      <created>1587372840117</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587372840117</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +203,8 @@
     <MESSAGE value="4-10" />
     <MESSAGE value="4-13" />
     <MESSAGE value="4-14" />
-    <option name="LAST_COMMIT_MESSAGE" value="4-14" />
+    <MESSAGE value="4-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="4-20" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="139" key="#Notifications" timestamp="1583370392457">
@@ -203,28 +219,28 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="957" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1583226453928" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1586854650634">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1587372837168">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586854650634" />
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587372837168" />
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog" timestamp="1585618494484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="624" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585618494484" />
-    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1587371455065">
+    <state x="685" y="168" key="FileChooserDialogImpl" timestamp="1587544951302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587371455065" />
+    <state x="685" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587544951302" />
     <state x="685" y="176" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586439497059" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1586396866057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586396866057" />
     <state x="270" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584089553405" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586854656161">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587372842646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586854656161" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587372842646" />
     <state x="482" y="146" key="VcsDiffUtil.ChangesDialog" timestamp="1585559258073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -233,10 +249,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586396606977" />
-    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1586854398343">
+    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1587456063808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586854398343" />
+    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1587456063808" />
     <state x="431" y="173" width="672" height="647" key="search.everywhere.popup" timestamp="1585798619983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
