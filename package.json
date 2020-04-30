@@ -12,6 +12,7 @@
     "core-js": "^3.6.4",
     "cube-ui": "~1.12.15",
     "moment": "^2.24.0",
+    "query-string": "^6.12.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
