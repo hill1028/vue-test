@@ -1,5 +1,5 @@
 <template>
-  <cube-scroll class="seller" :opition="sellerScrollOptions">
+  <cube-scroll class="seller" :options="sellerScrollOptions">
     <div class="seller-content">
       <div class="overview">
         <h1 class="title">{{seller.name}}</h1>
@@ -81,6 +81,7 @@
 </template>
 
 <script>
+  import { saveToLocal, loadFromLocal } from 'common/js/storage'
   import Split from 'components/split/split'
   import Star from 'components/star/star'
   import SupportIco from '../support-ico/support-ico'
@@ -116,9 +117,13 @@
         return this.favorite ? '已收藏' : '收藏'
       }
     },
+    created () {
+      this.favorite = loadFromLocal(this.seller.id, 'favorite', false)
+    },
     methods: {
       toggleFavorite() {
         this.favorite = !this.favorite
+        saveToLocal(this.seller.id, 'favorite', this.favorite)
       }
     },
     components: {
